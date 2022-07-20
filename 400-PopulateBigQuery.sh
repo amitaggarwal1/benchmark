@@ -1,6 +1,6 @@
 #!/bin/bash
 # Load into BQ
-export PROJECT=fivetran-bq-reserved
+export PROJECT=datairis
 export GS_BASE=fivetran-benchmark/tpcds_1000_dat
 export DATASET=tpcds_1000
 

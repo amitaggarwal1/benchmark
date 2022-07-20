@@ -3,7 +3,7 @@
 # NOTE: you will need to install https://www.npmjs.com/package/json to run this script
 set -e
 
-export PROJECT=fivetran-bq-reserved
+export PROJECT=datairis
 export DATASET=tpcds_1000
 
 # Warm-up
@@ -21,7 +21,7 @@ done < Warmup.sql
 # Test
 echo "Query,Started,Ended,Billing Tier,Bytes" > results/BigQueryResults.csv
 
-for FILE in query/*.sql; 
+for FILE in query/*.sql;
 do
     echo ${FILE}
     QUERY=`basename ${FILE} | head -c 7`
