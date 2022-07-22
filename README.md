@@ -1,3 +1,14 @@
+The scripts in this directory are used to load TPC-DS data into bigquery and run the benchmark.
+We run the following two scripts:
+- 400-PopulateBigQuery.sh
+- 401-BenchmarkBigQuery.sh
+
+This is originally cloned from https://github.com/fivetran/benchmark and the scripts have been modified to add the right project name.
+
+README for original project follows.
+
+----
+
 # Results
 https://fivetran.com/blog/warehouse-benchmark
 
